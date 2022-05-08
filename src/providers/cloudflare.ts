@@ -57,7 +57,7 @@ export default async function resolveChallenge(url: string, page: Page, response
       try {
 
         selector = await findAnySelector(page, CHALLENGE_SELECTORS)
-        if (!selector) {
+        if (true) {
           // solved!
           log.debug('Challenge element not found')
           break
